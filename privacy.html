@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>プライバシーポリシー | Pohoda</title>
-<meta name="description" content="Pohoda が提供する iOS アプリ（KATACHI / Keep In Touch / Glidwell / Graph / One CRM / Utility）における個人情報の取扱いについて。">
+<meta name="description" content="Pohoda が提供する iOS アプリ（KATACHI / Keep In Touch / Glidwell / Graph / One CRM / Utility / YANE）と Web サービス YANE における個人情報の取扱いについて。">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://pohoda.jp/legal/privacy.html">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -28,7 +28,7 @@
   <h1>プライバシーポリシー</h1>
   <p class="updated">制定日：2026年6月9日 ／ 最終改定：2026年10月2日</p>
 
-  <p class="lede">杉本 啓輔（屋号：Pohoda。以下「当方」）は、当方が提供する iOS/macOS アプリケーション「KATACHI」「Keep In Touch」「Glidwell」「Graph」「One CRM」「Utility」および「YANE」（以下あわせて「本アプリ」）における個人情報の取扱いについて、以下のとおり定めます。</p>
+  <p class="lede">杉本 啓輔（屋号：Pohoda。以下「当方」）は、当方が提供する iOS/macOS アプリケーション「KATACHI」「Keep In Touch」「Glidwell」「Graph」「One CRM」「Utility」および「YANE」（iOS アプリと Web サービス yane.pohoda.jp を含みます。以下あわせて「本アプリ」）における個人情報の取扱いについて、以下のとおり定めます。</p>
 
   <h2>1. 基本方針</h2>
   <p>本アプリは「ローカルファースト」を原則とします。ユーザーがアプリ内で記録する情報は、原則としてユーザーのデバイス内にのみ保存され、当方のサーバーには送信されません。<strong>当方がこれらの記録内容を閲覧・取得することはできません。</strong>本アプリは広告を表示せず、ユーザーの行動を他社サービスをまたいで追跡（トラッキング）しません。分析 SDK・トラッキング SDK は使用していません。</p>
@@ -111,6 +111,11 @@
     <p>住所や駅名の検索には、Apple の地図検索（MapKit）を利用します。検索の内容は Apple のプライバシーポリシーに従って扱われます。</p>
     <h3>2-24. 課金情報</h3>
     <p>Pro（買い切り）の購入・復元は<strong>Apple の StoreKit を通じてのみ</strong>行われます。当方はクレジットカード番号その他の決済情報を取得しません。Pro をご利用の場合は、無料版の利用上限の対象外とするため、App Store の購入情報（Apple が署名した取引情報）を中継サーバーに送信します。中継サーバーは署名を確かめるためだけに使い、短期間（最長1日）の確認結果だけを保持します。氏名・メールアドレス・支払い情報は含まれません。</p>
+    <h3>2-25. Web サービス（yane.pohoda.jp）</h3>
+    <p>Web サービスで登録した物件の情報・内見メモ・写真は、<strong>ご利用のブラウザの中（IndexedDB・localStorage）にのみ保存</strong>され、当方のサーバーには送信されません。ブラウザのサイトデータを消去すると削除されます。災害リスク・周辺データの取得は 2-22 と同じ方法で行います。住所の検索には国土地理院の住所検索を利用します。</p>
+    <p><strong>購入</strong>：Pro（Web）の決済は Stripe, Inc. の決済画面で行います。メールアドレスとカード情報は Stripe が取得・処理し、当方はカード番号を取得しません。決済後、当方は Stripe に支払いの状態を確かめ、Pro を有効にするための署名つきの値（ライセンス）を発行してブラウザに保存します。ライセンスには購入の識別番号が含まれ、氏名・メールアドレスは含まれません。返金された購入は、識別番号を失効の管理に使います。</p>
+    <p><strong>購入の復元</strong>：復元のために入力されたメールアドレスは、Stripe でそのアドレスの購入を確かめるため、および復元リンクのメールを送るため（Resend, Inc. を利用）にのみ使い、当方のサーバーには保存しません。</p>
+    <p><strong>不正な利用の防止</strong>：購入・復元の画面では、自動プログラムによる不正な利用を防ぐため Cloudflare Turnstile を利用します。Turnstile はブラウザの情報を Cloudflare 社のプライバシーポリシーに従って扱います。</p>
   </div>
 
   <h2>3. 利用目的</h2>
@@ -124,7 +129,9 @@
   <p>法令に基づく場合を除き、第三者に個人情報を提供しません。本アプリの運営に必要な範囲で、以下のサービスを利用します。</p>
   <ul>
     <li><strong>Apple Inc.</strong>（App Store 決済処理／iCloud。全アプリ共通）</li>
-    <li><strong>Cloudflare, Inc.</strong>（YANE の中継サーバーの運用。緯度・経度は保存しません）</li>
+    <li><strong>Cloudflare, Inc.</strong>（YANE の中継サーバー・Web サービスの運用、Turnstile による不正利用の防止。緯度・経度は保存しません）</li>
+    <li><strong>Stripe, Inc.</strong>（YANE の Web サービスの決済処理）</li>
+    <li><strong>Resend, Inc.</strong>（YANE の Web サービスの購入の復元メールの送信）</li>
     <li><strong>AI 提供者</strong>（Glidwell の AI 機能を利用する場合のみ。送信前にマスキングし、送信データを学習に使用しない事業者を利用します。中核機能では利用しません）</li>
   </ul>
 
@@ -132,6 +139,8 @@
   <ul>
     <li>アプリ内記録情報：ユーザーがアプリ内で削除するか、アプリをアンインストールするまで（デバイス内に保存。iCloud バックアップ有効時はユーザーの iCloud 内）</li>
     <li>YANE の中継サーバーの利用回数の値・購入の確認結果：翌日まで（最長1日）</li>
+    <li>YANE の Web サービスで返金された購入の識別番号：失効の管理に必要な期間</li>
+    <li>YANE の Web サービスの決済の記録：Stripe が法令とその規約に従って保持します</li>
   </ul>
 
   <h2>6. ユーザーの権利</h2>
