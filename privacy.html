@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>プライバシーポリシー | Pohoda</title>
-<meta name="description" content="Pohoda が提供する iOS アプリ（KATACHI / Keep In Touch / Glidwell / Graph / One CRM / Utility / YANE）と Web サービス YANE における個人情報の取扱いについて。">
+<meta name="description" content="Pohoda が提供する iOS アプリ（KATACHI / Keep In Touch / Glidwell / Graph / One CRM / Utility / Costs / YANE）と Web サービス YANE における個人情報の取扱いについて。">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://pohoda.jp/legal/privacy.html">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -24,6 +24,7 @@
       <a href="/graph.html">Graph</a>
       <a href="/one-crm.html">One CRM</a>
       <a href="/utility.html">Utility</a>
+      <a href="/costs.html">Costs</a>
       <a href="/pre-interview.html">Pre Interview</a>
       <a href="/insight.html">Insight</a>
       <a href="/drivescape.html">DriveScape</a>
@@ -39,7 +40,7 @@
   <h1>プライバシーポリシー</h1>
   <p class="updated">制定日：2026年6月9日 ／ 最終改定：2026年10月25日</p>
 
-  <p class="lede">杉本 啓輔（屋号：Pohoda。以下「当方」）は、当方が提供する iOS/macOS アプリケーション「KATACHI」「Keep In Touch」「Glidwell」「Graph」「One CRM」「Utility」および「YANE」（iOS アプリと Web サービス yane.pohoda.jp を含みます。以下あわせて「本アプリ」）における個人情報の取扱いについて、以下のとおり定めます。</p>
+  <p class="lede">杉本 啓輔（屋号：Pohoda。以下「当方」）は、当方が提供する iOS/macOS アプリケーション「KATACHI」「Keep In Touch」「Glidwell」「Graph」「One CRM」「Utility」「Costs」および「YANE」（iOS アプリと Web サービス yane.pohoda.jp を含みます。以下あわせて「本アプリ」）における個人情報の取扱いについて、以下のとおり定めます。</p>
 
   <h2>1. 基本方針</h2>
   <p>本アプリは「ローカルファースト」を原則とします。ユーザーがアプリ内で記録する情報は、原則としてユーザーのデバイス内にのみ保存され、当方のサーバーには送信されません。<strong>当方がこれらの記録内容を閲覧・取得することはできません。</strong>本アプリは広告を表示せず、ユーザーの行動を他社サービスをまたいで追跡（トラッキング）しません。分析 SDK・トラッキング SDK は使用していません。</p>
@@ -141,6 +142,18 @@
     <p><strong>不正な利用の防止</strong>：購入・復元の画面では、自動プログラムによる不正な利用を防ぐため Cloudflare Turnstile を利用します。Turnstile はブラウザの情報を Cloudflare 社のプライバシーポリシーに従って扱います。</p>
   </div>
 
+  <div class="app-block" id="costs">
+    <div class="app-head">Costs</div>
+    <h3>2-26. アプリ内で記録される情報</h3>
+    <p>ユーザーが入力する固定費・変動費・手取りの金額、項目名・カテゴリー・アイコン・色・メモ等は、<strong>すべてユーザーのデバイス内（SwiftData）に保存</strong>されます。アカウントの登録は不要で、銀行・クレジットカード等との連携も行いません。購入の処理（Apple の StoreKit）を除き、ネットワーク通信を行わず、当方のサーバーには送信されません。当方が記録内容を閲覧・取得することはできません。分析 SDK・広告 SDK は使用していません。</p>
+    <h3>2-27. iCloud バックアップ（任意）</h3>
+    <p>ユーザーが設定で自動バックアップをオンにした場合、または「今すぐバックアップ」を押した場合に限り、記録のバックアップファイル（JSON）を<strong>ユーザー自身の iCloud Drive（このアプリ専用のコンテナ）</strong>に保存します。CloudKit による同期は行いません。保存先はユーザーの Apple アカウント内であり、当方がアクセスすることはできません。「バックアップから復元」を行うと、その端末のデータはバックアップの内容に置き換わります。</p>
+    <h3>2-28. CSV の書き出し・画像での保存と共有</h3>
+    <p>CSV の書き出しや、画面の画像での保存・共有は、ユーザーの操作により端末内にファイルを作成し、共有シート等を通じてユーザーが選んだ宛先へ渡すものです。当方のサーバーには送信されません。</p>
+    <h3>2-29. 課金情報</h3>
+    <p>サポーター（年額）・買い切りの購入・更新・復元は<strong>Apple の StoreKit を通じてのみ</strong>行われます。当方はクレジットカード番号その他の決済情報を取得しません（Apple が処理します）。購入管理のための第三者サービスは利用していません。</p>
+  </div>
+
   <h2>3. 利用目的</h2>
   <ul>
     <li>本アプリの機能提供</li>
@@ -173,7 +186,7 @@
   <h2>6. ユーザーの権利</h2>
   <ul>
     <li>アプリ内記録情報の削除（アプリ内の操作、またはアンインストール）</li>
-    <li>iCloud バックアップの無効化（KATACHI：設定から）</li>
+    <li>iCloud バックアップの無効化（KATACHI・Costs：設定から）</li>
     <li>トレーナーとの連携の停止（KATACHI：設定の「トレーナーとの連携」から。項目ごと・記録ごとにも止められます）</li>
     <li>iCloud 同期の無効化（One CRM：「カスタマイズ」から）。共有から抜ける・参加者を外す・共有をやめる（One CRM：「カスタマイズ」から）</li>
   </ul>
@@ -207,6 +220,7 @@
         <a href="/graph.html">Graph</a>
         <a href="/one-crm.html">One CRM</a>
         <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
         <a href="/pre-interview.html">Pre Interview</a>
       </div>
       <div class="footer-col">
