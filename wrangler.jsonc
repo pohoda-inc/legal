@@ -3,6 +3,7 @@
   // 配信パスに合わせて dist/legal/ に置いてから公開する（URL の形は worker.js が GitHub Pages と同じにする）。
   "name": "pohoda-legal",
   "main": "worker.js",
+  "routes": [{ "pattern": "pohoda.jp/legal*", "zone_name": "pohoda.jp" }],
   "compatibility_date": "2026-11-01",
   "build": { "command": "rm -rf dist && mkdir -p dist/legal && cp *.html dist/legal/" },
   "assets": {
